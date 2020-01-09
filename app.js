@@ -16,7 +16,7 @@ app.all("*", (req, res, next) => {
         next();
 });
 // 4. 监听 http://127.0.0.1:8081"
-app.listen(8081, "127.0.0.1");
+app.listen(8081, "0.0.0.0");
 
 // 5. 中间件
 const bodyParser = require("body-parser");
@@ -27,10 +27,10 @@ app.use(bodyParser.urlencoded({
 // 6.处理路由
 // 导入路由
 const shopRouter = require('./router/shop');
-app.use("/",shopRouter);
+app.use("/shop",shopRouter);
 
 
 // 7. 处理静态资源
 app.use(express.static("public"));
 // 8. 打印输出提示信息
-console.log("server running at http://127.0.0.1:8081");
+console.log("==========================执行完毕==========================");
