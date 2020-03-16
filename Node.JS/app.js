@@ -26,9 +26,9 @@ app.use(bodyParser.urlencoded({
 }));
 // 6.处理路由
 // 导入路由
-const shopRouter = require('./router/shop');
-app.use("/shop",shopRouter);
-
+// const shopRouter = require('./router/shop');
+// app.use("/",shopRouter);
+const router = require("./router/index");
 
 // 7. 处理静态资源
 app.use(express.static("public"));
