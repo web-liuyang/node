@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>刘洋最帅</div>
+    <button id="btn" onclick="btn()">点我</button>
+    <a href="/pages/about.html">关于</a>
+    <script>
+        
+        function btn(){
+            fetch("/get").then(res=>res.json()).then(data=>{
+                console.log(data)
+            })
+            console.log("btn")
+        }
+    </script>
+</body>
+</html>
