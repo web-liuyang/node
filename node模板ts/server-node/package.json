@@ -27,6 +27,6 @@
     "cross-env": "^7.0.2",
     "mysql": "^2.18.1",
     "nodemon": "^2.0.4",
-    "shelljs": "^0.8.4"
+    "shelljs": "^0.8.5"
   }
 }
